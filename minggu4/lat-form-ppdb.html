@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Formulir PPDB Jalur Zonasi 2021</title>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1"> 
+        <style>
+            body{
+                font-family: 'Times New Roman', Times, serif;
+                background-color: #F7EBB2;
+            }
+            table{
+                border-collapse: collapse;
+            }
+            table, thead, td{
+                border: 1px solid black;
+            }
+            .isidata{
+                border-right: 1px;
+                align-content: left;
+            }
+            .nomora{
+                text-align: center;
+                width: 50px;
+            }
+            .nomorb{
+                text-align: center;
+            }
+            .titikdua{
+                text-align: center;
+                border-right: 1px;
+                border-left: 1px;
+            }
+            .namadata{
+                border-right: 1px;
+                align-content: left;
+            }
+            .inputdata{
+                border-left: 1px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center;">FORMULIR PPDB JALUR ZONASI TAHUN 2021</h1>
+        <br>
+        <form action="proses.php" method="post" name="FormPPDBZonasi2021">
+            <table width="60%" cellspacing="0" cellpadding="5" align="center">
+                <thead>
+                    <td class="nomora"><b>Nomor</b></td>
+                    <td class="isidata" colspan="4"><b>INFO PENDAFTARAN</b></td>
+                </thead>
+                <tr>
+                    <td class="nomorb">1</td>
+                    <td class="namadata">NISN</td>
+                    <td class="titikdua"><label for="fnisn"></label>:</td>
+                    <td class="inputdata"><input type="text" size="60" id="fnisn" name="fnisn"></td>
+                </tr>
+                <tr>
+                    <td class="nomorb">2</td>
+                    <td class="namadata">Asal Sekolah</td>
+                    <td class="titikdua"><label for="fasalsekolah"></label>:</td>
+                    <td class="inputdata"><input type="text" size="60" id="fasalsekolah" name="fasalsekolah"></td>
+                </tr>
+                <tr>
+                    <td class="nomorb">3</td>
+                    <td class="namadata">Tahun Lulus</td>
+                    <td class="titikdua"><label for="ftahunlulus"></label>:</td>
+                    <td class="inputdata"><input type="text" size="60" id="ftahunlulus" name="ftahunlulus"></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><b>DATA CALON PESERTA</b></td>
+                </tr>
+                <tr>
+                    <td class="nomorb">4</td>
+                    <td class="namadata">Nama Lengkap</td>
+                    <td class="titikdua"><label for="fnamalengkap"></label>:</td>
+                    <td class="inputdata"><input type="text" size="60" id="fnamalengkap" name="fnamalengkap"></td>
+                </tr>
+                <tr>
+                    <td class="nomorb">5</td>
+                    <td class="namadata">NIK</td>
+                    <td class="titikdua"><label for="fnik"></label>:</td>
+                    <td class="inputdata"><input type="text" size="60" id="fnik" name="fnik"></td>
+                </tr>
+                <tr>
+                    <td class="nomorb">6</td>
+                    <td class="namadata">Tempat/Tanggal Lahir</td>
+                    <td class="titikdua"><label for="ftempattanggallahir"></label>:</td>
+                    <td class="inputdata"><input type="text" size="35" id="ftempatlahir" name="ftempatlahir"><input type="date" size="40" id="ftanggallahir" name="ftanggallahir"></td>
+                </tr>
+                <tr>
+                    <td class="nomorb"></td>
+                    <td class="namadata" colspan="3">Foto Copy Akta Kelahiran Yang Telah Dilegalisir (Dilampirkan)</td>
+                </tr>
+                <tr>
+                    <td class="nomorb">7</td>
+                    <td class="namadata">Jenis Kelamin</td>
+                    <td class="titikdua"><label for="fjeniskelamin"></label>:</td>
+                    <td class="inputdata">
+                        <input type="radio" id="fjeniskelamin" name="fjeniskelamin" value="Laki-Laki"> 
+                        <label for="fjeniskelamin">Laki-Laki</label>
+                        <input type="radio" id="fjeniskelamin" name="fjeniskelamin" value="Perempuan"> 
+                        <label for="fjeniskelamin">Perempuan</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="nomorb">8</td>
+                    <td class="namadata">Alamat</td>
+                    <td class="titikdua"><label for="falamat"></label>:</td>
+                    <td class="inputdata"><input type="text" size="60" id="falamat" name="falamat"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span style="padding-left: 150px;" class="namadata">Desa/Kel.</span></td>
+                    <td class="titikdua"><label for="fdesakelurahan"></label>:</td>
+                    <td class="inputdata"><input type="text" size="60" id="fdesakelurahan" name="fdesakelurahan"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span style="padding-left: 150px;" class="namadata">Kecamatan</span></td>
+                    <td class="titikdua"><label for="fkecamatan"></label>:</td>
+                    <td class="inputdata"><input type="text" size="60" id="fkecamatan" name="fkecamatan"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span style="padding-left: 150px;" class="namadata">Kab/Kota</span></td>
+                    <td class="titikdua"><label for="fkabupatenkota"></label>:</td>
+                    <td class="inputdata"><input type="text" size="60" id="fkabupatenkota" name="fkabupatenkota"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span style="padding-left: 150px;" class="namadata">Provinsi</span></td>
+                    <td class="titikdua"><label for="fprovinsi"></label>:</td>
+                    <td class="inputdata"><input type="text" size="60" id="fprovinsi" name="fprovinsi"></td>
+                </tr>
+                <tr>
+                    <td class="nomorb">9</td>
+                    <td class="namadata">Email Aktif</td>
+                    <td class="titikdua"><label for="femailaktif"></label>:</td>
+                    <td class="inputdata"><input type="text" size="60" id="femailaktif" name="femailaktif"></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><b>DATA ORANG TUA</b></td>
+                </tr>
+                <tr>
+                    <td class="nomorb">10</td>
+                    <td class="namadata">Nomor Kartu Keluarga</td>
+                    <td class="titikdua"><label for="fnomorkartukeluarga"></label>:</td>
+                    <td class="inputdata"><input type="text" size="60" id="fnomorkartukeluarga" name="fnomorkartukeluarga"></td>
+                </tr>
+                <tr>
+                    <td class="nomorb">11</td>
+                    <td class="namadata">Nama Ayah Kandung</td>
+                    <td class="titikdua"><label for="fnamaayahkandung"></label>:</td>
+                    <td class="inputdata"><input type="text" size="60" id="fnamaayahkandung"name="fnamaayahkandung"></td>
+                </tr>
+                <tr>
+                    <td class="nomorb">12</td>
+                    <td class="namadata">Agama</td>
+                    <td class="titikdua"><label for="fagamaayah"></label>:</td>
+                    <td class="inputdata"><select id="fagamaayah" name="fagamaayah">
+                        <option value="">--Pilih Agama--</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen">Kristen</option>
+                        <option value="Katolik">Katolik</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Buddha">Buddha</option>
+                        <option value="Konghucu">Konghucu</option>
+                        <option value="PercayaterhadapTuhanYangMahaEsa">Percaya terhadap Tuhan Yang Maha Esa</option>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="nomorb">13</td>
+                    <td class="namadata">Pekerjaan</td>
+                    <td class="titikdua"><label for="fpekerjaanayah"></label>:</td>
+                    <td class="inputdata"><input type="text" size="60" id="fpekerjaanayah" name="fpekerjaanayah"></td>
+                </tr>
+                <tr>
+                    <td class="nomorb">14</td>
+                    <td class="namadata">Nama Ibu Kandung</td>
+                    <td class="titikdua"><label for="fnamaibukandung"></label>:</td>
+                    <td class="inputdata"><input type="text" size="60" id="fnamaibukandung"name="fnamaibukandung"></td>
+                </tr>
+                <tr>
+                    <td class="nomorb">15</td>
+                    <td class="namadata">Agama</td>
+                    <td class="titikdua"><label for="fagamaibu"></label>:</td>
+                    <td class="inputdata"><select id="fagamaibu" name="fagamaibu">
+                        <option value="">--Pilih Agama--</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen">Kristen</option>
+                        <option value="Katolik">Katolik</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Buddha">Buddha</option>
+                        <option value="Konghucu">Konghucu</option>
+                        <option value="PercayaterhadapTuhanYangMahaEsa">Percaya terhadap Tuhan Yang Maha Esa</option>
+                </tr>
+                <tr>
+                    <td class="nomorb">16</td>
+                    <td class="namadata">Pekerjaan</td>
+                    <td class="titikdua"><label for="fpekerjaanibu"></label>:</td>
+                    <td class="inputdata"><input type="text" size="60" id="fpekerjaanibu" name="fpekerjaanibu"></td>
+                </tr>
+                <tr>
+                    <td class="nomorb">17</td>
+                    <td class="namadata">Alamat Orang Tua</td>
+                    <td class="titikdua"><label for="falamatorangtua"></label>:</td>
+                    <td class="inputdata"><input type="text" size="60" id="falamatorangtua" name="falamatorangtua"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span style="padding-left: 150px;" class="namadata">Desa/Kel.</span></td>
+                    <td class="titikdua"><label for="fdesakelurahanorangtua"></label>:</td>
+                    <td class="inputdata"><input type="text" size="60" id="fdesakelurahanorangtua" name="fdesakelurahanorangtua"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span style="padding-left: 150px;" class="namadata">Kecamatan</span></td>
+                    <td class="titikdua"><label for="fkecamatanorangtua"></label>:</td>
+                    <td class="inputdata"><input type="text" size="60" id="fkecamatanorangtua" name="fkecamatanorangtua"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span style="padding-left: 150px;" class="namadata">Kab/Kota</span></td>
+                    <td class="titikdua"><label for="fkabupatenkotaorangtua"></label>:</td>
+                    <td class="inputdata"><input type="text" size="60" id="fkabupatenkotaorangtua" name="fkabupatenkotaorangtua"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span style="padding-left: 150px;" class="namadata">Provinsi</span></td>
+                    <td class="titikdua"><label for="fprovinsiorangtua"></label>:</td>
+                    <td class="inputdata"><input type="text" size="60" id="fprovinsiorangtua" name="fprovinsiorangtua"></td>
+                </tr>
+                <tr>
+                    <td colspan="5" align="center" ><input type="reset" value="Kosongkan Formulir"><input type="submit" value="Kirim/Simpan"></td>
+                </tr>
+            </table>
+    </body>
+</html>
